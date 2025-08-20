@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowLeft, Calendar, User, Code, ExternalLink, MapPin } from 'lucide-react';
+import { ArrowLeft, Calendar, User, Code, ExternalLink} from 'lucide-react';
 import { Project } from '../data/portfolioData';
 
 interface ProjectDetailProps {

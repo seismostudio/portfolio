@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { User, MapPin, Mail, Linkedin, Github, Phone, TriangleRightIcon, Building2Icon } from 'lucide-react';
+import { User, MapPin, Mail, Linkedin, Phone, TriangleRightIcon, Building2Icon } from 'lucide-react';
 import { PersonalInfo } from '../data/portfolioData';
 
 interface AboutSectionProps {

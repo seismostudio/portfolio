@@ -54,7 +54,7 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({ experiences }) =>
               <div className="absolute left-10 top-0 bottom-0 w-0.5 bg-primary-200 hidden md:block"></div>
               
               <div className="space-y-12">
-                {experiences.map((exp, index) => (
+                {experiences.map((exp) => (
                   <motion.div
                     key={exp.id}
                     variants={itemVariants}

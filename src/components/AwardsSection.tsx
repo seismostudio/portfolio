@@ -50,7 +50,7 @@ const AwardsSection: React.FC<AwardsSectionProps> = ({ awards }) => {
 
             {/* Awards Grid */}
             <div className="grid md:grid-cols-2 gap-8">
-              {awards.map((award, index) => (
+              {awards.map((award) => (
                 <motion.div
                   key={award.id}
                   variants={itemVariants}

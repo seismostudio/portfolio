@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Download, ArrowDown, MapPin, Mail, Phone, BuildingIcon, HardHatIcon } from 'lucide-react';
+import { Download, MapPin, Mail, Phone, BuildingIcon, HardHatIcon } from 'lucide-react';
 import { PersonalInfo } from '../data/portfolioData';
 
 interface HeroSectionProps {
@@ -7,7 +7,7 @@ interface HeroSectionProps {
   onNavigate: (section: string) => void;
 }
 
-const HeroSection: React.FC<HeroSectionProps> = ({ personalInfo, onNavigate }) => {
+const HeroSection: React.FC<HeroSectionProps> = ({ personalInfo }) => {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {

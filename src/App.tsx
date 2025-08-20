@@ -129,7 +129,7 @@ function App() {
                   </div>
                   <div 
                     className={`cursor-pointer transition-all transform -rotate-[12deg] origin-right ${
-                      activeSection === 'education' 
+                      activeSection === 'education'|| currentSection === 'education'
                         ? 'text-primary-900 scale-[120%] [text-shadow:_-1px_-1px_0_#fff,_1px_-1px_0_#fff,_-1px_1px_0_#fff,_1px_1px_0_#fff]' 
                         : 'hover:text-primary-900 hover:scale-[120%] hover:[text-shadow:_-1px_-1px_0_#fff,_1px_-1px_0_#fff,_-1px_1px_0_#fff,_1px_1px_0#fff]'
                     }`}

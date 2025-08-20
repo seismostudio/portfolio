@@ -50,7 +50,7 @@ const EducationSection: React.FC<EducationSectionProps> = ({ education }) => {
 
             {/* Education Cards */}
             <div className="grid md:grid-cols-1 gap-2 mb-10">
-              {education.map((edu, index) => (
+              {education.map((edu) => (
                 <motion.div
                   key={edu.id}
                   variants={itemVariants}
