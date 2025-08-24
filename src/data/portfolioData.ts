@@ -315,12 +315,12 @@ export const projects: Project[] = [
   },
   {
     id: "proj-3",
-    title: "Renovasi Gedung Perkantoran",
+    title: "Renovasi Rumah Tinggal",
     description: "Proyek renovasi gedung perkantoran 15 lantai dengan penambahan 3 lantai baru",
     image: [
       "/projects/project1.png",
     ],
-    role: "Structural Engineer",
+    role: "Designer, Estimator, Site Engineer",
     responsibilities: [
       "Analisis struktur existing",
       "Desain struktur penambahan lantai",
@@ -328,6 +328,6 @@ export const projects: Project[] = [
       "Pengawasan pelaksanaan konstruksi"
     ],
     technologies: ["ETABS", "AutoCAD", "SAP2000", "Structural Analysis Software"],
-    period: "2021 - 2022"
+    period: "2025"
   }
 ];
