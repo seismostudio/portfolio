@@ -316,18 +316,28 @@ export const projects: Project[] = [
   {
     id: "proj-3",
     title: "Renovasi Rumah Tinggal",
-    description: "Proyek renovasi gedung perkantoran 15 lantai dengan penambahan 3 lantai baru",
+    description: "Proyek renovasi rumah tinggal, Cijerah, Bandung",
     image: [
-      "/projects/project1.png",
+      "/projects/project3 (1).png",
+      "/projects/project3 (2).png",
+      "/projects/project3 (3).png",
+      "/projects/project3 (4).png",
+      "/projects/project3 (5).png",
+      "/projects/project3 (6).png",
+      "/projects/project3 (7).png",
+      "/projects/project3 (8).png",
+      "/projects/project3 (9).png",
+      
     ],
-    role: "Designer, Estimator, Site Engineer",
+    role: "Designer, Estimator, Site Engineer, Drafter",
     responsibilities: [
-      "Analisis struktur existing",
-      "Desain struktur penambahan lantai",
-      "Perhitungan beban dan analisis kekuatan",
-      "Pengawasan pelaksanaan konstruksi"
+      "Melakukan survei kondisi eksisting, dan membuat desain sesuai kebutuhan owner",
+      "Membuat Gambar Kerja, membuat visualisasi render foto maupun video",
+      "Menentukan item pekerjaan, volume, harga satuan, dan membuat RAB",
+      "Melakukan pengawasan lapangan agar sesuai dengan sepesifikasi",
+      "melakukan pembelanjaan material-material serta kontroling budget"
     ],
-    technologies: ["ETABS", "AutoCAD", "SAP2000", "Structural Analysis Software"],
+    technologies: ["Microsoft Excel", "Autodesk Revit", "D5"],
     period: "2025"
   }
 ];
