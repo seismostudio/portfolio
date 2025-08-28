@@ -350,16 +350,13 @@ export const projects: Project[] = [
     description: "Proyek perbaikan tanah dan struktur pondasi Tower Backbone Network pada tanah lunak di 5 titik lokasi tower, Kalimnatan. Bekerja sama dengan PT. LEN Industri",
     company: "PT. Dahar Engineer Consultant",
     image: [
-      "/projects/project3 (1).png",
-      "/projects/project3 (2).png",
-      "/projects/project3 (3).png",
-      "/projects/project3 (4).png",
-      "/projects/project3 (5).png",
-      "/projects/project3 (6).png",
-      "/projects/project3 (7).png",
-      "/projects/project3 (8).png",
-      "/projects/project3 (9).png",
-      
+      "/projects/project4 (1).png",
+      "/projects/project4 (2).png",
+      "/projects/project4 (3).png",
+      "/projects/project4 (4).png",
+      "/projects/project4 (5).png",
+      "/projects/project4 (6).png",
+      "/projects/project4 (7).png",      
     ],
     role: "Geotechnical Engineer, BIM Modeler, Drafter",
     responsibilities: [
