@@ -7,6 +7,7 @@ export interface Project {
   responsibilities: string[];
   technologies: string[];
   period: string;
+  company?: string;
   link?: string;
 }
 
@@ -275,6 +276,7 @@ export const projects: Project[] = [
     id: "proj-1",
     title: "Analisa Stabilitas Lereng Rel Kereta Api Cisauk DAOP I",
     description: "Menganalisa dan Menentukan Perkuatan Lereng pada jalur rel kereta api Cisauk DAOP I km 33+280 & km 33+304",
+    company: "",
     image: [
       "/projects/project1 (1).png",
       "/projects/project1 (2).png",
@@ -294,6 +296,7 @@ export const projects: Project[] = [
     id: "proj-2",
     title: "Pembangunan Alun-Alun Kabupaten Bandung Barat",
     description: "Proyek pembangunan alun-alun Kabupaten Bandung Barat dengan struktur baja",
+    company:"",
     image: [
       "/projects/project2 (1).png",
       "/projects/project2 (2).png",
@@ -316,7 +319,8 @@ export const projects: Project[] = [
   {
     id: "proj-3",
     title: "Renovasi Rumah Tinggal",
-    description: "Proyek renovasi rumah tinggal, Cijerah, Bandung",
+    description: "Proyek renovasi rumah tinggal bersama dengan Dahar Engineer, Cijerah, Bandung",
+    company: "PT. Dahar Engineer Consultant",
     image: [
       "/projects/project3 (1).png",
       "/projects/project3 (2).png",
@@ -335,9 +339,37 @@ export const projects: Project[] = [
       "Membuat Gambar Kerja, membuat visualisasi render foto maupun video",
       "Menentukan item pekerjaan, volume, harga satuan, dan membuat RAB",
       "Melakukan pengawasan lapangan agar sesuai dengan sepesifikasi",
-      "melakukan pembelanjaan material-material serta kontroling budget"
+      "Melakukan pembelanjaan material-material serta kontroling budget"
     ],
     technologies: ["Microsoft Excel", "Autodesk Revit", "D5"],
     period: "2025"
-  }
+  },
+  {
+    id: "proj-4",
+    title: "Perbaikan Tanah dan Struktur Pondasi Tower Backbone Network",
+    description: "Proyek perbaikan tanah dan struktur pondasi Tower Backbone Network pada tanah lunak di 5 titik lokasi tower, Kalimnatan. Bekerja sama dengan PT. LEN Industri",
+    company: "PT. Dahar Engineer Consultant",
+    image: [
+      "/projects/project3 (1).png",
+      "/projects/project3 (2).png",
+      "/projects/project3 (3).png",
+      "/projects/project3 (4).png",
+      "/projects/project3 (5).png",
+      "/projects/project3 (6).png",
+      "/projects/project3 (7).png",
+      "/projects/project3 (8).png",
+      "/projects/project3 (9).png",
+      
+    ],
+    role: "Geotechnical Engineer, BIM Modeler, Drafter",
+    responsibilities: [
+      "Melakukan analisa kondisi tanah eksisting",
+      "Membuat dan menganalisis beberapa alternatif perkuatan dan perbaikan tanah maupun pondasi yang bisa digunankan",
+      "Membuat Laporan Detail Engineering Design",
+      "Membuat Technical Drawing",
+      "Membuat work sequence atau urutan pekerjaan terhadap alternatif rekomendasi"
+    ],
+    technologies: ["Microsoft Excel", "Autodesk Revit", "D5", "Dahar Pile Bear"],
+    period: "2025"
+  },
 ];

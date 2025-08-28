@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ExternalLink, Calendar, User, Code } from 'lucide-react';
+import { ExternalLink, Calendar, User, Code, Building } from 'lucide-react';
 import { Project } from '../data/portfolioData';
 
 interface ProjectsSectionProps {
@@ -101,14 +101,18 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects, onProjectCl
                         <Calendar size={16} />
                         <span className="text-sm">{project.period}</span>
                       </div>
+
+                      {project.company && (
+                      <div className="flex items-center space-x-2 text-primary-400">
+                        <Building size={16} />
+                        <span className="text-sm">{project.company}</span>
+                      </div>
+                      )}
+
                     </div>
 
                     {/* Technologies */}
                     <div className="mb-4">
-                      <h4 className="text-sm font-semibold text-primary-400 mb-2 flex items-center">
-                        <Code size={16} className="mr-2" />
-                        Technologies Used
-                      </h4>
                       <div className="flex flex-wrap gap-2">
                         {project.technologies.slice(0, 3).map((tech, idx) => (
                           <span

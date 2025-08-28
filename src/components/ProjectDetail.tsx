@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowLeft, Calendar, User, Code, ExternalLink} from 'lucide-react';
+import { ArrowLeft, Calendar, User, Code, ExternalLink, Building} from 'lucide-react';
 import { Project } from '../data/portfolioData';
 
 interface ProjectDetailProps {
@@ -95,6 +95,16 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack }) => {
                       <p className="text-primary-500 font-medium">{project.period}</p>
                     </div>
                   </div>
+
+                  {project.company && (
+                    <div className="flex items-center space-x-3">
+                      <Building size={20} className="text-primary-500" />
+                      <div>
+                        <span className="text-sm text-primary-500 font-medium">Company</span>
+                        <p className="text-primary-500 font-medium">{project.company}</p>
+                      </div>
+                    </div>
+                  )}
 
                   {project.link && (
                     <div className="flex items-center space-x-3">

@@ -46,9 +46,6 @@ const Footer: React.FC<FooterProps> = ({ personalInfo }) => {
             {/* Company Info */}
             <motion.div variants={itemVariants} className="lg:col-span-2">
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
-                  <span className="text-primary-900 font-bold text-lg">C</span>
-                </div>
                 <span className="font-bold text-xl">David Harly Rizky Prabudhi, S.T.</span>
               </div>
               {/* <p className="text-primary-200 mb-6 leading-relaxed max-w-md">
