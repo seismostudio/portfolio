@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Mail, Linkedin, Github, Phone, MapPin} from 'lucide-react';
+import { Mail, Linkedin, Phone, MapPin} from 'lucide-react';
 import { PersonalInfo } from '../data/portfolioData';
 
 interface FooterProps {
@@ -60,14 +60,14 @@ const Footer: React.FC<FooterProps> = ({ personalInfo }) => {
                 >
                   <Linkedin size={20} />
                 </a>
-                <a
+                {/*<a
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-primary-800 rounded-lg flex items-center justify-center hover:bg-primary-700 transition-colors duration-200"
                 >
                   <Github size={20} />
-                </a>
+                </a>*/}
                 <a
                   href={`mailto:${personalInfo.email}`}
                   className="w-10 h-10 bg-primary-800 rounded-lg flex items-center justify-center hover:bg-primary-700 transition-colors duration-200"

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ExternalLink, Calendar, User, Code, Building } from 'lucide-react';
+import { ExternalLink, Calendar, User, Building } from 'lucide-react';
 import { Project } from '../data/portfolioData';
 
 interface ProjectsSectionProps {
