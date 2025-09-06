@@ -369,4 +369,154 @@ export const projects: Project[] = [
     technologies: ["Microsoft Excel", "Autodesk Revit", "D5", "Dahar Pile Bear"],
     period: "2025"
   },
+  {
+    id: "proj-5",
+    title: "Struktural Gedung 3 Lantai",
+    description: "Proyek struktural gedung 3 lantai bersama PT. Dahar Engineer Consultant",
+    company: "PT. Dahar Engineer Consultant",
+    image: [
+      "/projects/project5 (1).png",
+      "/projects/project5 (2).png",
+      "/projects/project5 (3).png",
+      "/projects/project5 (4).png",
+      "/projects/project5 (5).png", 
+    ],
+    role: "BIM Engineer, BIM Modeler",
+    responsibilities: [
+      "Membuat model struktur menggunakan Autodesk Revit",
+      "Membuat gambar kerja Shop Drawing dan As Built Drawing untuk pelaksanaan konstruksi",
+      "Mengambil Quantity Take Off seluruh item pekerjaan struktur (beton, bekisting, dan pembesian)",
+      "Melakukan cross check terhadap volume take off dengan volume hasil backup quantity lapangan",
+      "Memberikan rekomendasi serta clash detection untuk konstruksi di lapangan"
+    ],
+    technologies: ["Microsoft Excel", "Autodesk Revit", "D5"],
+    period: "2025"
+  },
+  {
+    id: "proj-6",
+    title: "Desain Interior Kamar Mandi",
+    description: "Desain interior kamar mandi berukuran 3 m x 5 m dengan 2 ruang kamar mandi bersama PT. Dahar Engineer Consultant",
+    company: "PT. Dahar Engineer Consultant",
+    image: [
+      "/projects/project6 (1).png",
+      "/projects/project6 (2).png",
+      "/projects/project6 (3).png",
+      "/projects/project6 (4).png",
+      "/projects/project6 (5).png", 
+    ],
+    role: "Designer, Drafter",
+    responsibilities: [
+      "Membuat model dan design menggunakan Autodesk Revit",
+      "Membuat gambar kerja detail untuk pelaksanaan konstruksi",
+      "Menentukan material-material yang akan digunakan",
+      "Membuat video animasi render",
+      "Membuat visualisasi foto render"
+    ],
+    technologies: ["Autodesk Revit", "D5"],
+    period: "2025"
+  },
+  {
+    id: "proj-7",
+    title: "Rumah Tinggal 'Arunika Gaurika'",
+    description: "Membuat gambar kerja rumah tinggal bersama Studio Timoer dan PT. Dahar Engineer Consultant",
+    company: "Studio Timoer, PT. Dahar Engineer Consultant",
+    image: [
+      "/projects/project7 (1).png",
+      "/projects/project7 (2).png",
+      "/projects/project7 (3).png",
+      "/projects/project7 (4).png",
+    ],
+    role: "Drafter",
+    responsibilities: [
+      "Membuat model menggunakan Autodesk Revit",
+      "Membuat gambar kerja detail untuk pelaksanaan konstruksi menggunakan Autodesk Revit",
+    ],
+    technologies: ["Autodesk Revit", "D5"],
+    period: "2024"
+  },
+  {
+    id: "proj-8",
+    title: "Rumah Tinggal 'Nirmala Divya'",
+    description: "Membuat gambar kerja rumah tinggal bersama Studio Timoer dan PT. Dahar Engineer Consultant",
+    company: "Studio Timoer, PT. Dahar Engineer Consultant",
+    image: [
+      "/projects/project8 (1).jpg",
+      "/projects/project8 (2).jpg",
+      "/projects/project8 (3).jpg",
+      "/projects/project8 (4).jpg",
+    ],
+    role: "Drafter",
+    responsibilities: [
+      "Membuat model menggunakan Autodesk Revit",
+      "Membuat gambar kerja detail untuk pelaksanaan konstruksi menggunakan Autodesk Revit",
+    ],
+    technologies: ["Autodesk Revit", "D5"],
+    period: "2024"
+  },
+  {
+    id: "proj-9",
+    title: "Renovasi Rumah Tinggal",
+    description: "Membuat gambar kerja renovasi rumah tinggal bersama Studio Timoer dan PT. Dahar Engineer Consultant",
+    company: "Studio Timoer, PT. Dahar Engineer Consultant",
+    image: [
+      "/projects/project9 (1).png",
+      "/projects/project9 (2).png",
+      "/projects/project9 (3).png",
+      "/projects/project9 (4).png",
+    ],
+    role: "Drafter",
+    responsibilities: [
+      "Membuat model menggunakan Autodesk Revit",
+      "Membuat gambar kerja detail untuk pelaksanaan konstruksi menggunakan Autodesk Revit",
+      "Membuat gambar kerja demolished plan menggunakan Autodesk Revit",
+    ],
+    technologies: ["Autodesk Revit", "D5"],
+    period: "2025"
+  },
+  {
+    id: "proj-10",
+    title: "Struktur Kanopi Gudang",
+    description: "Struktur kanopi gudang di kerawang dengan bentang 11 m bersama PT. Dahar Engineer Consultant",
+    company: "PT. Dahar Engineer Consultant",
+    image: [
+      "/projects/project10 (1).jpg",
+      "/projects/project10 (2).jpg",
+      "/projects/project10 (3).jpg",
+      "/projects/project10 (4).jpg",
+      "/projects/project10 (5).jpg",
+      "/projects/project10 (6).jpg",
+    ],
+    role: "Struktural Engineer, Geotechnical Engineer, Drafter",
+    responsibilities: [
+      "Menganalisa kekuatan struktur kanopi dan menentukan profil",
+      "Menganalisa kekuatan pondasi dan menentukan dimensi pondasi",
+      "Membuat model menggunakan Autodesk Revit",
+      "Membuat gambar kerja detail untuk pelaksanaan konstruksi menggunakan Autodesk Revit",
+      "Melakukan Quantity Take Off Volume untuk seluruh kebutuhan item pekerjaan",
+      "Membuat laporan analisa stuktur kanopi",
+    ],
+    technologies: ["SAP2000", "Microsoft Excel", "Microsoft Word", "Autodesk Revit", "D5"],
+    period: "2025"
+  },
+  {
+    id: "proj-11",
+    title: "Struktur Pylon Sign",
+    description: "Studi Kelayakan Struktur pylon sign Wulling dengan tinggi 11 meter bersama PT. Dahar Engineer Consultant",
+    company: "PT. Dahar Engineer Consultant",
+    image: [
+      "/projects/project11 (1).png",
+      "/projects/project11 (2).png",
+      "/projects/project11 (3).png",
+      "/projects/project11 (4).png",
+    ],
+    role: "Struktural Engineer, Drafter",
+    responsibilities: [
+      "Menganalisa kekuatan struktur kanopi dan menentukan kelayakan profil eksiting",
+      "Membuat model menggunakan Autodesk Revit",
+      "Membuat gambar kerja detail menggunakan Autodesk Revit",
+      "Membuat laporan studi kelayakan stuktur Pylon Sign",
+    ],
+    technologies: ["SAP2000", "Microsoft Excel", "Microsoft Word", "Autodesk Revit", "D5"],
+    period: "2024"
+  },
 ];
