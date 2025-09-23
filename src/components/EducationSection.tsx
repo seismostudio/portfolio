@@ -32,7 +32,7 @@ const EducationSection: React.FC<EducationSectionProps> = ({ education }) => {
 
   return (
     <section id="education" className="p-5 bg-gradient-to-b from-black to-gray-900">
-      <div className="w-3/4">
+      <div className="w-full md:w-3/4">
         <div className="container-custom">
           <motion.div
             variants={containerVariants}

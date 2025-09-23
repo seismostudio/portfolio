@@ -116,7 +116,7 @@ function App() {
             <div ref={sectionRefs.main}
               >
               {/*side navigation*/}
-               <div className="sticky h-screen top-0 right-0 float-right flex flex-col items-end justify-center text-white space-y-20 z-10 p-4 font-bold text-5xl">
+               <div className="md:block hidden sticky h-screen top-0 right-0 float-right flex flex-col items-end justify-center text-white space-y-20 z-10 p-4 font-bold text-3xl lg:text-4xl xl:text-5xl">
                   <div 
                     className={`cursor-pointer transition-all transform -rotate-[18deg] origin-right ${
                       activeSection === 'about' 

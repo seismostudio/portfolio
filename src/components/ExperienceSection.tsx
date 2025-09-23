@@ -32,7 +32,7 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({ experiences }) =>
 
   return (
     <section id="experience" className="bg-gray-900 p-5">
-      <div className="w-3/4">
+      <div className="w-full md:w-3/4">
         <div className="container-custom">
           <motion.div
             variants={containerVariants}

@@ -39,10 +39,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({ personalInfo }) => {
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-black to-gray-900 relative overflow-hidden">
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-40">
-        <div className="absolute top-20 left-20 w-32 h-32 border-2 border-primary-300 rounded-full flex items-center justify-center"></div>
-        <div className="absolute top-40 right-32 w-24 h-24 border-2 border-primary-300 rounded-full flex items-center justify-center"><HardHatIcon className="text-white w-12 h-12 rotate-45"/></div>
-        <div className="absolute bottom-32 left-32 w-16 h-16 border-2 border-primary-300 rounded-full flex items-center justify-center"><BuildingIcon className="text-white"/></div>
+      <div className="absolute inset-0 opacity-40 md:block hidden">
+        <div className="absolute top-10 lg:top-20 left-16 lg:left-20 w-24 h-24 lg:w-32 lg:h-32 border-2 border-primary-300 rounded-full flex items-center justify-center"></div>
+        <div className="absolute top-16 lg:top-24 right-32 w-20 h-20 border-2 border-primary-300 rounded-full flex items-center justify-center"><HardHatIcon className="text-white w-10 h-10 rotate-45"/></div>
+        <div className="absolute bottom-32 left-24 lg:left-32 w-16 h-16 border-2 border-primary-300 rounded-full flex items-center justify-center"><BuildingIcon className="text-white"/></div>
       </div>
 
       <div className="container-custom relative w-full z-10">
@@ -50,7 +50,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ personalInfo }) => {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="text-right w-full h-screen mx-auto flex flex-col items-end justify-center"
+          className="text-right w-full h-full md:h-screen mx-auto flex flex-col items-end justify-center"
         >
           {/* Profile Image */}
           <motion.div 
@@ -58,11 +58,29 @@ const HeroSection: React.FC<HeroSectionProps> = ({ personalInfo }) => {
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="mb-8 absolute top-0 left-0 transform -translate-x-1/2 -translate-y-1/2">
+            className="mb-8 absolute top-0 left-0 transform -translate-x-1/2 -translate-y-1/2 md:block hidden">
               <img
                 src={personalInfo.profileImage}
                 alt={personalInfo.name}
-                className="w-[90%] h-full object-cover"
+                className="md:w-[50%] lg:w-[60%] xl:w-[80%] 2xl:w-[90%] h-full object-cover"
+                style={{
+                  filter: 'saturate(0.2) brightness(0.9)',
+                  opacity: 0.8
+                }}
+              />
+          </motion.div>
+
+          {/* Profile Image Mobile*/}
+          <motion.div 
+            variants={itemVariants} 
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="mb-8 transform -translate-x-1/2 -translate-y-1/2 md:hidden block">
+              <img
+                src={personalInfo.profileImage}
+                alt={personalInfo.name}
+                className="md:w-[50%] lg:w-[60%] xl:w-[80%] 2xl:w-[90%] h-full object-cover"
                 style={{
                   filter: 'saturate(0.2) brightness(0.9)',
                   opacity: 0.8
@@ -71,7 +89,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ personalInfo }) => {
           </motion.div>
 
           {/* Name and Title */}
-          <motion.h1 variants={itemVariants} className="text-5xl md:text-6xl font-bold text-white mb-4">
+          <motion.h1 variants={itemVariants} className="w-full lg:w-1/2 2xl:w-1/2 text-5xl md:text-6xl font-bold text-white mb-4">
             {personalInfo.name}
           </motion.h1>
           
@@ -120,7 +138,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ personalInfo }) => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1, duration: 0.6 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 md:block hidden"
       >
         <motion.div
           animate={{ y: [0, 10, 0] }}

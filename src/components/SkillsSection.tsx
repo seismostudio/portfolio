@@ -65,7 +65,7 @@ const SkillsSection: React.FC<SkillsSectionProps> = ({ skills }) => {
 
   return (
     <section id="skills" className="bg-gray-900 p-5">
-      <div className="w-3/4">
+      <div className="w-full md:w-3/4">
         <div className="container-custom">
           <motion.div
             variants={containerVariants}
@@ -84,7 +84,7 @@ const SkillsSection: React.FC<SkillsSectionProps> = ({ skills }) => {
             <div className="gap-12">
               {/* Technical Skills */}
               <motion.div variants={itemVariants}>
-                <div className="p-8">
+                <div className="md:p-8">
                   <div className="flex items-center space-x-3 mb-6">
                     <div className="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center">
                       <Code size={20} className="text-primary-600" />
@@ -97,7 +97,7 @@ const SkillsSection: React.FC<SkillsSectionProps> = ({ skills }) => {
                   <div className="grid grid-cols-2 gap-8">
                     {technicalSkills.map((skill) => (
                       <div key={skill.id} className="space-y-1">
-                        <div className="flex items-center justify-between">
+                        <div className="flex flex-col md:flex-row items-start md:items-center justify-between">
                           <span className="font-medium text-white">{skill.name}</span>
                           <span className="text-sm text-primary-400 capitalize">{skill.level}</span>
                         </div>
@@ -117,7 +117,7 @@ const SkillsSection: React.FC<SkillsSectionProps> = ({ skills }) => {
 
               {/* Soft Skills */}
               <motion.div variants={itemVariants}>
-                <div className="p-8">
+                <div className="py-8 md:p-8">
                   <div className="flex items-center space-x-3 mb-6">
                     <div className="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center">
                       <Users size={20} className="text-primary-600" />

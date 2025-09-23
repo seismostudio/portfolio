@@ -32,7 +32,7 @@ const AwardsSection: React.FC<AwardsSectionProps> = ({ awards }) => {
 
   return (
     <section id="awards" className="bg-gradient-to-b from-gray-900 to-black p-5 mb-20">
-      <div className="w-3/4">
+      <div className="w-full md:w-3/4">
         <div className="container-custom">
           <motion.div
             variants={containerVariants}
@@ -54,7 +54,7 @@ const AwardsSection: React.FC<AwardsSectionProps> = ({ awards }) => {
                 <motion.div
                   key={award.id}
                   variants={itemVariants}
-                  className="border-b border-primary-100 p-6 transition-all duration-300 relative overflow-hidden"
+                  className="border-b border-primary-100 md:px-6 py-6 transition-all duration-300 relative overflow-hidden"
                 >
                   {/* Award Icon */}
                   <div className="flex flex-row w-full justify-between">

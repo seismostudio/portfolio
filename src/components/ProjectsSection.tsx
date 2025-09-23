@@ -33,7 +33,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects, onProjectCl
 
   return (
     <section id="projects" className="bg-gradient-to-b from-black to-gray-900 p-5">
-      <div className='bg-transparent w-3/4'>
+      <div className='bg-transparent w-full md:w-3/4'>
         <div className="container-custom">
           <motion.div
             variants={containerVariants}
