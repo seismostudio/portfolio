@@ -32,7 +32,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ personalInfo }) => {
 
   const contactItems = [
     { icon: Mail, label: 'Email', value: personalInfo.email, link: `mailto:${personalInfo.email}` },
-    { icon: Phone, label: 'Phone', value: personalInfo.phone, link: personalInfo.phone ? `tel:${personalInfo.phone}` : undefined },
+    { icon: Phone, label: 'Phone', value: personalInfo.phone, link: `https://wa.me/6282120867946` },
     { icon: MapPin, label: 'Location', value: personalInfo.location },
     { icon: Linkedin, label: 'LinkedIn', value: 'in/davidharlyrp', link: personalInfo.linkedin }
   ];
@@ -80,7 +80,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ personalInfo }) => {
                   <User size={20} className="mr-2" />
                   Contact Information
                 </h3>
-                <div className="space-y-3 grid grid-cols-2">
+                <div className="space-y-3 grid md:grid-cols-2">
                   {contactItems.map((item, index) => (
                     <div key={index} className="flex items-center space-x-3">
                       <div className="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center">
@@ -91,8 +91,8 @@ const AboutSection: React.FC<AboutSectionProps> = ({ personalInfo }) => {
                         {item.link ? (
                           <a
                             href={item.link}
-                            target={item.label === 'LinkedIn' || item.label === 'GitHub' ? '_blank' : undefined}
-                            rel={item.label === 'LinkedIn' || item.label === 'GitHub' ? 'noopener noreferrer' : undefined}
+                            target={item.label === 'LinkedIn' || item.label === 'GitHub' || item.label === 'Phone' ? '_blank' : undefined}
+                            rel={item.label === 'LinkedIn' || item.label === 'GitHub' || item.label === 'Phone' ? 'noopener noreferrer' : undefined}
                             className="block text-primary-100 hover:text-primary-500 transition-colors duration-200"
                           >
                             {item.value}

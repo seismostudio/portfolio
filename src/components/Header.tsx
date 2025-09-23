@@ -20,8 +20,8 @@ const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
 
   const navItems = [
     { id: 'about', label: 'About' },
-    { id: 'experience', label: 'Experience' },
     { id: 'education', label: 'Education' },
+    { id: 'experience', label: 'Experience' },
     { id: 'skills', label: 'Skills' },
     { id: 'awards', label: 'Awards' },
     { id: 'projects', label: 'Projects' }
@@ -34,39 +34,18 @@ const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
 
   return (
     <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`sticky top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'hidden' 
+          ? 'bg-transparent block' 
           : 'bg-transparent block'
       }`}
     >
-      <div className="container-custom hidden">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary-800 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">C</span>
-            </div>
-            <span className="font-bold text-xl text-primary-800">Civil Engineer</span>
-          </div>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => handleNavClick(item.id)}
-                className="text-primary-700 hover:text-primary-900 font-medium transition-colors duration-200"
-              >
-                {item.label}
-              </button>
-            ))}
-          </nav>
-
+      <div className="w-full md:hidden p-3">
+        <div className={'flex  justify-end h-16'}>
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 text-primary-700 hover:text-primary-900 transition-colors duration-200"
+            className="md:hidden z-[100] px-5 text-primary-700 hover:text-primary-900 transition-colors duration-200"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -74,13 +53,15 @@ const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white border-t border-primary-100">
+          <div className="md:hidden z-[99] fixed top-0 right-0 bg-black/50 backdrop-blur-sm rounded-bl-2xl">
+            <div className="border-t border-primary-500 mt-20">
+            </div>
             <nav className="py-4 space-y-2">
               {navItems.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => handleNavClick(item.id)}
-                  className="block w-full text-left px-4 py-2 text-primary-700 hover:bg-primary-50 hover:text-primary-900 transition-colors duration-200"
+                  className="block w-full text-left px-4 py-2 text-white hover:bg-primary-50 hover:text-primary-900 transition-colors duration-200"
                 >
                   {item.label}
                 </button>
